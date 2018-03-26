@@ -1,0 +1,97 @@
+<html>
+<head>
+<script>
+	var i = 0; 	
+	var images = [];
+	var time = 3000;
+
+	images[0] = "images/background.jpeg";
+	images[1] = "images/background1.jpeg";
+	images[2] = "images/background2.jpeg";
+	images[3] = "images/background3.jpeg";
+
+	function changeImg(){
+		document.slide.src = images[i];
+		if(i < images.length - 1){
+			i++; 
+			} else { 
+				i = 0;
+			}
+			setTimeout("changeImg()", time);
+		}
+		window.onload=changeImg;
+</script>
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<title>Tour Guru</title>
+</head>
+<body>
+	<center>
+		<img name="slide" height="300px">
+	</center>
+		<fieldset class="package">
+			<legend>Himachal</legend>
+			<table border="0">
+			<tr>
+				<td rowspan="2"><img src="images/himachal.jpg" class="medium"></td>
+				<td>Locations:Kullu, Manali, Shimla, Dharamsala, Dalhousie</td>
+				<td align="right">COST:<br>INR 12000</td>
+			</tr>
+			<tr>
+				<td>For a totol of 6 days</td>
+			</tr>
+			</table>
+		</fieldset>
+		<fieldset class="package">
+			<legend>Kerala</legend>
+			<table border="0">
+			<tr>
+				<td rowspan="2"><img src="images/kerala.jpg" class="medium"></td>
+				<td>Locations:Kochi, Munnar, Thiruvananthapuram, Alappuzha</td>
+				<td align="right">COST:<br>INR 13000</td>
+			</tr>
+			<tr>
+				<td>For a totol of 5 days</td>
+			</tr>
+			</table>
+		</fieldset>	
+		<fieldset class="package">
+			<legend>Rajasthan</legend>
+			<table border="0">
+			<tr>
+				<td rowspan="2"><img src="images/gujarat.jpg" class="medium"></td>
+				<td>Locations:Jaipur, Jodhpur, Udaipur, Jaisalmer</td>
+				<td align="right">COST:<br>INR 10000</td>
+			</tr>
+			<tr>
+				<td>For a totol of 6 days</td>
+			</tr>
+			</table>
+		</fieldset>	
+		<fieldset class="package">
+			<legend>Gujarat</legend>
+			<table border="0">
+			<tr>
+				<td rowspan="2"><img src="images/kerala.jpg" class="medium"></td>
+				<td>Locations:	Ahmedabad, Bhuj, Vadodara, Dwarka</td>
+				<td align="right">COST:<br>INR 9000</td>
+			</tr>
+			<tr>
+				<td>For a totol of 5 days</td>
+			</tr>
+			</table>
+		</fieldset>
+		<fieldset class="package">
+			<legend>Goa</legend>
+			<table border="0">
+			<tr>
+				<td rowspan="2"><img src="images/goa.jpg" class="medium"></td>
+				<td>Locations:	Panaji, Calangute, Old Goa, Baga</td>
+				<td align="right">COST:<br>INR 6000</td>
+			</tr>
+			<tr>
+				<td>For a totol of 4 days</td>
+			</tr>
+			</table>	
+		</fieldset>
+</body>
+</html>
